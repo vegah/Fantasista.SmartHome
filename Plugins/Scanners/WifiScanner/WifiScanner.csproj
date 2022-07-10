@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Fantasista.SmartHome\Fantasista.SmartHome.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tmds.DBus" Version="0.10.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutDir>$(SolutionDir)Fantasista.SmartHome\bin\$(Configuration)\$(TargetFramework)\Plugins\Scanners</OutDir>    
+  </PropertyGroup>
+
+</Project>

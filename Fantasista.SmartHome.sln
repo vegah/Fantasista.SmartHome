@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fantasista.SmartHome", "Fantasista.SmartHome\Fantasista.SmartHome.csproj", "{9A489A4F-102B-4A4D-ABBB-419AD362D356}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{C4E38C5A-CD17-4838-8BA3-873C43455A2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scanners", "Scanners", "{C66AE3CB-56FA-4995-8E62-43B28491FC2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifiScanner", "Plugins\Scanners\WifiScanner\WifiScanner.csproj", "{13467160-5154-4D7A-A88A-BA186DB0209A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,13 @@ Global
 		{9A489A4F-102B-4A4D-ABBB-419AD362D356}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A489A4F-102B-4A4D-ABBB-419AD362D356}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A489A4F-102B-4A4D-ABBB-419AD362D356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13467160-5154-4D7A-A88A-BA186DB0209A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13467160-5154-4D7A-A88A-BA186DB0209A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13467160-5154-4D7A-A88A-BA186DB0209A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13467160-5154-4D7A-A88A-BA186DB0209A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C66AE3CB-56FA-4995-8E62-43B28491FC2B} = {C4E38C5A-CD17-4838-8BA3-873C43455A2A}
+		{13467160-5154-4D7A-A88A-BA186DB0209A} = {C66AE3CB-56FA-4995-8E62-43B28491FC2B}
 	EndGlobalSection
 EndGlobal
