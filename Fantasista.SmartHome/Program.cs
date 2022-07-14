@@ -5,4 +5,4 @@ var config = new DefaultConfig();
 var scanners = new AllScanners(config);
 Log.Info("Searching for scanners : ");
 scanners.FindScanners();
-scanners.RunScanner("WifiScanner");
+await scanners.RunScanner("WifiScanner");

@@ -19,7 +19,7 @@ namespace NetworkManager.DBus
     interface INetworkManager : IDBusObject
     {
         Task ReloadAsync(uint Flags);
-        Task<ObjectPath[]> GetDevicesAsync();
+        Task<IDevice[]> GetDevicesAsync();
         Task<ObjectPath[]> GetAllDevicesAsync();
         Task<ObjectPath> GetDeviceByIpIfaceAsync(string Iface);
         Task<ObjectPath> ActivateConnectionAsync(ObjectPath Connection, ObjectPath Device, ObjectPath SpecificObject);

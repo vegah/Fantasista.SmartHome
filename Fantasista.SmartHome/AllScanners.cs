@@ -20,11 +20,11 @@ namespace Fantasista.SmartHome
                 _scanners.AddRange(AssemblyUtil.FindByInterface<IScanner>(path));
         }
 
-        public void RunScanner(string name)
+        public async Task RunScanner(string name)
         {
             var scanner = _scanners.FirstOrDefault(x=>x.Type.Name==name);
             if (scanner==null) throw new ScannerNotFoundException(name);
-            scanner.Instance.Scan();
+            await scanner.Instance.Scan();
         }
         
     }
